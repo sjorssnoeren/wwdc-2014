@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051DCC3218F0463F00105A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DCC3118F0463F00105A27 /* Foundation.framework */; };
+		051DCC3418F0463F00105A27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DCC3318F0463F00105A27 /* CoreGraphics.framework */; };
+		051DCC3618F0463F00105A27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DCC3518F0463F00105A27 /* UIKit.framework */; };
+		051DCC3C18F0463F00105A27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 051DCC3A18F0463F00105A27 /* InfoPlist.strings */; };
+		051DCC3E18F0463F00105A27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 051DCC3D18F0463F00105A27 /* main.m */; };
+		051DCC4218F0463F00105A27 /* SJSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 051DCC4118F0463F00105A27 /* SJSAppDelegate.m */; };
+		051DCC4418F0463F00105A27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051DCC4318F0463F00105A27 /* Images.xcassets */; };
+		051DCC4B18F0463F00105A27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DCC4A18F0463F00105A27 /* XCTest.framework */; };
+		051DCC4C18F0463F00105A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DCC3118F0463F00105A27 /* Foundation.framework */; };
+		051DCC4D18F0463F00105A27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051DCC3518F0463F00105A27 /* UIKit.framework */; };
+		051DCC5518F0463F00105A27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 051DCC5318F0463F00105A27 /* InfoPlist.strings */; };
+		051DCC5718F0463F00105A27 /* Sjors_SnoerenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 051DCC5618F0463F00105A27 /* Sjors_SnoerenTests.m */; };
+		051DCC6718F04E6F00105A27 /* SJSPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 051DCC6618F04E6F00105A27 /* SJSPresentationViewController.m */; };
+		052370AB18F1678A00DF999D /* SJSReadMoreBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 052370AA18F1678A00DF999D /* SJSReadMoreBtn.m */; };
+		052370CD18F1BAF900DF999D /* SJSDribbbleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 052370CC18F1BAF900DF999D /* SJSDribbbleModel.m */; };
+		0531822618F5955300F65C80 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0531822518F5955300F65C80 /* UIImage+ImageEffects.m */; };
+		0531822918F597D700F65C80 /* SJSAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0531822818F597D700F65C80 /* SJSAppsViewController.m */; };
+		0573C3D918F295B7006067EB /* SJSVCAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3D818F295B7006067EB /* SJSVCAnimator.m */; };
+		0573C3E118F29A53006067EB /* SJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3E018F29A53006067EB /* SJSViewController.m */; };
+		0573C3EA18F2DEEA006067EB /* SJSWorkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3E918F2DEEA006067EB /* SJSWorkCollectionViewCell.m */; };
+		0573C3F118F2E620006067EB /* SJSDribbbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3F018F2E620006067EB /* SJSDribbbleViewController.m */; };
+		0573C3F518F2F816006067EB /* SJSSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3F418F2F816006067EB /* SJSSidebarViewController.m */; };
+		0573C3FA18F2FC00006067EB /* SJSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3F918F2FC00006067EB /* SJSMenuViewController.m */; };
+		057EE45618F6EA8D00852980 /* SJSWorkSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EE45518F6EA8D00852980 /* SJSWorkSlide.m */; };
+		05827D7818F825920023FB8D /* SJSLogoPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 05827D7718F825920023FB8D /* SJSLogoPageControl.m */; };
+		05827D8018F837D60023FB8D /* SJSShowcaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05827D7F18F837D60023FB8D /* SJSShowcaseViewController.m */; };
+		05827D8318F83BC80023FB8D /* SJSExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05827D8218F83BC80023FB8D /* SJSExperienceViewController.m */; };
+		058E5B2118FA856300960EEE /* SJSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058E5B2018FA856300960EEE /* SJSProjectsViewController.m */; };
+		059BAB8618F5345400444A0D /* SJSAvatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 059BAB8518F5345400444A0D /* SJSAvatarImageView.m */; };
+		059BAB8A18F5361900444A0D /* SJSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 059BAB8918F5361900444A0D /* SJSTextView.m */; };
+		059E2BF018F05BAB00E01788 /* SJSPresentationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 059E2BEF18F05BAB00E01788 /* SJSPresentationSlide.m */; };
+		05D4DD3418F92C07001CB8F2 /* SJSSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D4DD3318F92C07001CB8F2 /* SJSSocialViewController.m */; };
+		05D52D5818F4321A004FEF32 /* SJSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D52D5718F4321A004FEF32 /* SJSAboutViewController.m */; };
+		05D52D5D18F4400F004FEF32 /* SJSMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D52D5C18F4400F004FEF32 /* SJSMenuTableView.m */; };
+		05D52D6018F44046004FEF32 /* SJSMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D52D5F18F44046004FEF32 /* SJSMenuTableViewCell.m */; };
+		05D52D6918F4443E004FEF32 /* SJSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D52D6818F4443E004FEF32 /* SJSDetailViewController.m */; };
+		05D52D6D18F447FA004FEF32 /* SJSAsynchronousImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D52D6C18F447FA004FEF32 /* SJSAsynchronousImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		051DCC4E18F0463F00105A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051DCC2618F0463F00105A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 051DCC2D18F0463F00105A27;
+			remoteInfo = "Sjors Snoeren";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051DCC2E18F0463F00105A27 /* Sjors Snoeren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sjors Snoeren.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		051DCC3118F0463F00105A27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		051DCC3318F0463F00105A27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		051DCC3518F0463F00105A27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		051DCC3918F0463F00105A27 /* Sjors Snoeren-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sjors Snoeren-Info.plist"; sourceTree = "<group>"; };
+		051DCC3B18F0463F00105A27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		051DCC3D18F0463F00105A27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		051DCC3F18F0463F00105A27 /* Sjors Snoeren-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sjors Snoeren-Prefix.pch"; sourceTree = "<group>"; };
+		051DCC4018F0463F00105A27 /* SJSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSAppDelegate.h; sourceTree = "<group>"; };
+		051DCC4118F0463F00105A27 /* SJSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSAppDelegate.m; sourceTree = "<group>"; };
+		051DCC4318F0463F00105A27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		051DCC4918F0463F00105A27 /* Sjors SnoerenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sjors SnoerenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		051DCC4A18F0463F00105A27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		051DCC5218F0463F00105A27 /* Sjors SnoerenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sjors SnoerenTests-Info.plist"; sourceTree = "<group>"; };
+		051DCC5418F0463F00105A27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		051DCC5618F0463F00105A27 /* Sjors_SnoerenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sjors_SnoerenTests.m; sourceTree = "<group>"; };
+		051DCC6518F04E6F00105A27 /* SJSPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSPresentationViewController.h; sourceTree = "<group>"; };
+		051DCC6618F04E6F00105A27 /* SJSPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSPresentationViewController.m; sourceTree = "<group>"; };
+		052370A918F1678A00DF999D /* SJSReadMoreBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSReadMoreBtn.h; sourceTree = "<group>"; };
+		052370AA18F1678A00DF999D /* SJSReadMoreBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSReadMoreBtn.m; sourceTree = "<group>"; };
+		052370CB18F1BAF900DF999D /* SJSDribbbleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSDribbbleModel.h; sourceTree = "<group>"; };
+		052370CC18F1BAF900DF999D /* SJSDribbbleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSDribbbleModel.m; sourceTree = "<group>"; };
+		0531822418F5955300F65C80 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		0531822518F5955300F65C80 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		0531822718F597D700F65C80 /* SJSAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSAppsViewController.h; sourceTree = "<group>"; };
+		0531822818F597D700F65C80 /* SJSAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSAppsViewController.m; sourceTree = "<group>"; };
+		0573C3D718F295B7006067EB /* SJSVCAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSVCAnimator.h; sourceTree = "<group>"; };
+		0573C3D818F295B7006067EB /* SJSVCAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSVCAnimator.m; sourceTree = "<group>"; };
+		0573C3DF18F29A53006067EB /* SJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSViewController.h; sourceTree = "<group>"; };
+		0573C3E018F29A53006067EB /* SJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSViewController.m; sourceTree = "<group>"; };
+		0573C3E818F2DEEA006067EB /* SJSWorkCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSWorkCollectionViewCell.h; sourceTree = "<group>"; };
+		0573C3E918F2DEEA006067EB /* SJSWorkCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSWorkCollectionViewCell.m; sourceTree = "<group>"; };
+		0573C3EF18F2E620006067EB /* SJSDribbbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSDribbbleViewController.h; sourceTree = "<group>"; };
+		0573C3F018F2E620006067EB /* SJSDribbbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSDribbbleViewController.m; sourceTree = "<group>"; };
+		0573C3F318F2F816006067EB /* SJSSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSSidebarViewController.h; sourceTree = "<group>"; };
+		0573C3F418F2F816006067EB /* SJSSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSSidebarViewController.m; sourceTree = "<group>"; };
+		0573C3F818F2FC00006067EB /* SJSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSMenuViewController.h; sourceTree = "<group>"; };
+		0573C3F918F2FC00006067EB /* SJSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSMenuViewController.m; sourceTree = "<group>"; };
+		057EE45418F6EA8D00852980 /* SJSWorkSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSWorkSlide.h; sourceTree = "<group>"; };
+		057EE45518F6EA8D00852980 /* SJSWorkSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSWorkSlide.m; sourceTree = "<group>"; };
+		05827D7618F825920023FB8D /* SJSLogoPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSLogoPageControl.h; sourceTree = "<group>"; };
+		05827D7718F825920023FB8D /* SJSLogoPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSLogoPageControl.m; sourceTree = "<group>"; };
+		05827D7E18F837D60023FB8D /* SJSShowcaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSShowcaseViewController.h; sourceTree = "<group>"; };
+		05827D7F18F837D60023FB8D /* SJSShowcaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSShowcaseViewController.m; sourceTree = "<group>"; };
+		05827D8118F83BC80023FB8D /* SJSExperienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSExperienceViewController.h; sourceTree = "<group>"; };
+		05827D8218F83BC80023FB8D /* SJSExperienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSExperienceViewController.m; sourceTree = "<group>"; };
+		058E5B1F18FA856300960EEE /* SJSProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSProjectsViewController.h; sourceTree = "<group>"; };
+		058E5B2018FA856300960EEE /* SJSProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSProjectsViewController.m; sourceTree = "<group>"; };
+		059BAB8418F5345400444A0D /* SJSAvatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSAvatarImageView.h; sourceTree = "<group>"; };
+		059BAB8518F5345400444A0D /* SJSAvatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSAvatarImageView.m; sourceTree = "<group>"; };
+		059BAB8818F5361900444A0D /* SJSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSTextView.h; sourceTree = "<group>"; };
+		059BAB8918F5361900444A0D /* SJSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSTextView.m; sourceTree = "<group>"; };
+		059E2BEE18F05BAB00E01788 /* SJSPresentationSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSPresentationSlide.h; sourceTree = "<group>"; };
+		059E2BEF18F05BAB00E01788 /* SJSPresentationSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSPresentationSlide.m; sourceTree = "<group>"; };
+		05D4DD3218F92C07001CB8F2 /* SJSSocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSSocialViewController.h; sourceTree = "<group>"; };
+		05D4DD3318F92C07001CB8F2 /* SJSSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSSocialViewController.m; sourceTree = "<group>"; };
+		05D52D5618F4321A004FEF32 /* SJSAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSAboutViewController.h; sourceTree = "<group>"; };
+		05D52D5718F4321A004FEF32 /* SJSAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSAboutViewController.m; sourceTree = "<group>"; };
+		05D52D5B18F4400F004FEF32 /* SJSMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSMenuTableView.h; sourceTree = "<group>"; };
+		05D52D5C18F4400F004FEF32 /* SJSMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSMenuTableView.m; sourceTree = "<group>"; };
+		05D52D5E18F44046004FEF32 /* SJSMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSMenuTableViewCell.h; sourceTree = "<group>"; };
+		05D52D5F18F44046004FEF32 /* SJSMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSMenuTableViewCell.m; sourceTree = "<group>"; };
+		05D52D6718F4443E004FEF32 /* SJSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSDetailViewController.h; sourceTree = "<group>"; };
+		05D52D6818F4443E004FEF32 /* SJSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSDetailViewController.m; sourceTree = "<group>"; };
+		05D52D6B18F447FA004FEF32 /* SJSAsynchronousImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSAsynchronousImage.h; sourceTree = "<group>"; };
+		05D52D6C18F447FA004FEF32 /* SJSAsynchronousImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSAsynchronousImage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		051DCC2B18F0463F00105A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051DCC3418F0463F00105A27 /* CoreGraphics.framework in Frameworks */,
+				051DCC3618F0463F00105A27 /* UIKit.framework in Frameworks */,
+				051DCC3218F0463F00105A27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051DCC4618F0463F00105A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051DCC4B18F0463F00105A27 /* XCTest.framework in Frameworks */,
+				051DCC4D18F0463F00105A27 /* UIKit.framework in Frameworks */,
+				051DCC4C18F0463F00105A27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		051DCC2518F0463F00105A27 = {
+			isa = PBXGroup;
+			children = (
+				051DCC3718F0463F00105A27 /* Sjors Snoeren */,
+				051DCC5018F0463F00105A27 /* Sjors SnoerenTests */,
+				051DCC3018F0463F00105A27 /* Frameworks */,
+				051DCC2F18F0463F00105A27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		051DCC2F18F0463F00105A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC2E18F0463F00105A27 /* Sjors Snoeren.app */,
+				051DCC4918F0463F00105A27 /* Sjors SnoerenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		051DCC3018F0463F00105A27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC3118F0463F00105A27 /* Foundation.framework */,
+				051DCC3318F0463F00105A27 /* CoreGraphics.framework */,
+				051DCC3518F0463F00105A27 /* UIKit.framework */,
+				051DCC4A18F0463F00105A27 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		051DCC3718F0463F00105A27 /* Sjors Snoeren */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC6018F0464700105A27 /* AppDelegate */,
+				051DCC6318F046A800105A27 /* Models */,
+				051DCC6218F0468800105A27 /* Views */,
+				051DCC6118F0467D00105A27 /* Controllers */,
+				0531822318F5954500F65C80 /* Vendor */,
+				051DCC4318F0463F00105A27 /* Images.xcassets */,
+				051DCC3818F0463F00105A27 /* Supporting Files */,
+			);
+			path = "Sjors Snoeren";
+			sourceTree = "<group>";
+		};
+		051DCC3818F0463F00105A27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC3918F0463F00105A27 /* Sjors Snoeren-Info.plist */,
+				051DCC3A18F0463F00105A27 /* InfoPlist.strings */,
+				051DCC3D18F0463F00105A27 /* main.m */,
+				051DCC3F18F0463F00105A27 /* Sjors Snoeren-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		051DCC5018F0463F00105A27 /* Sjors SnoerenTests */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC5618F0463F00105A27 /* Sjors_SnoerenTests.m */,
+				051DCC5118F0463F00105A27 /* Supporting Files */,
+			);
+			path = "Sjors SnoerenTests";
+			sourceTree = "<group>";
+		};
+		051DCC5118F0463F00105A27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC5218F0463F00105A27 /* Sjors SnoerenTests-Info.plist */,
+				051DCC5318F0463F00105A27 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		051DCC6018F0464700105A27 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC4018F0463F00105A27 /* SJSAppDelegate.h */,
+				051DCC4118F0463F00105A27 /* SJSAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		051DCC6118F0467D00105A27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC6418F04E6100105A27 /* Presentation */,
+				0573C3DE18F29A48006067EB /* ViewController */,
+				0573C3D218F28C55006067EB /* Detail */,
+				0573C3F218F2F806006067EB /* SidebarController */,
+				0573C3D118F28A07006067EB /* Content */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		051DCC6218F0468800105A27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				057EE45318F6EA7C00852980 /* WorkSlide */,
+				059BAB8718F5360B00444A0D /* TextView */,
+				059BAB8318F5343100444A0D /* About */,
+				05D52D5A18F43FFF004FEF32 /* TableViews */,
+				0573C3DA18F29A09006067EB /* Work */,
+				052370A818F1677600DF999D /* ReadMoreBtn */,
+				059E2BED18F05B9C00E01788 /* PresentationSlide */,
+				05827D7918F825950023FB8D /* LogoPageControl */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		051DCC6318F046A800105A27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05D52D6A18F447EB004FEF32 /* AsynchronousImage */,
+				052370CA18F1BAE900DF999D /* Dribbble */,
+				0573C3D618F29588006067EB /* ViewController Extensions */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		051DCC6418F04E6100105A27 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				051DCC6518F04E6F00105A27 /* SJSPresentationViewController.h */,
+				051DCC6618F04E6F00105A27 /* SJSPresentationViewController.m */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		052370A818F1677600DF999D /* ReadMoreBtn */ = {
+			isa = PBXGroup;
+			children = (
+				052370A918F1678A00DF999D /* SJSReadMoreBtn.h */,
+				052370AA18F1678A00DF999D /* SJSReadMoreBtn.m */,
+			);
+			name = ReadMoreBtn;
+			sourceTree = "<group>";
+		};
+		052370CA18F1BAE900DF999D /* Dribbble */ = {
+			isa = PBXGroup;
+			children = (
+				052370CB18F1BAF900DF999D /* SJSDribbbleModel.h */,
+				052370CC18F1BAF900DF999D /* SJSDribbbleModel.m */,
+			);
+			name = Dribbble;
+			sourceTree = "<group>";
+		};
+		0531822318F5954500F65C80 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0531822418F5955300F65C80 /* UIImage+ImageEffects.h */,
+				0531822518F5955300F65C80 /* UIImage+ImageEffects.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		0573C3D118F28A07006067EB /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				05D4DD3518F92C16001CB8F2 /* Info */,
+				05D4DD3618F92C28001CB8F2 /* Dribbble */,
+				05827D7A18F837900023FB8D /* Showcase */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		0573C3D218F28C55006067EB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				05D52D6718F4443E004FEF32 /* SJSDetailViewController.h */,
+				05D52D6818F4443E004FEF32 /* SJSDetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		0573C3D618F29588006067EB /* ViewController Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0573C3D718F295B7006067EB /* SJSVCAnimator.h */,
+				0573C3D818F295B7006067EB /* SJSVCAnimator.m */,
+			);
+			name = "ViewController Extensions";
+			sourceTree = "<group>";
+		};
+		0573C3DA18F29A09006067EB /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				0573C3E818F2DEEA006067EB /* SJSWorkCollectionViewCell.h */,
+				0573C3E918F2DEEA006067EB /* SJSWorkCollectionViewCell.m */,
+			);
+			name = Work;
+			sourceTree = "<group>";
+		};
+		0573C3DE18F29A48006067EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0573C3DF18F29A53006067EB /* SJSViewController.h */,
+				0573C3E018F29A53006067EB /* SJSViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0573C3F218F2F806006067EB /* SidebarController */ = {
+			isa = PBXGroup;
+			children = (
+				0573C3F818F2FC00006067EB /* SJSMenuViewController.h */,
+				0573C3F918F2FC00006067EB /* SJSMenuViewController.m */,
+				0573C3F318F2F816006067EB /* SJSSidebarViewController.h */,
+				0573C3F418F2F816006067EB /* SJSSidebarViewController.m */,
+			);
+			name = SidebarController;
+			sourceTree = "<group>";
+		};
+		057EE45318F6EA7C00852980 /* WorkSlide */ = {
+			isa = PBXGroup;
+			children = (
+				057EE45418F6EA8D00852980 /* SJSWorkSlide.h */,
+				057EE45518F6EA8D00852980 /* SJSWorkSlide.m */,
+			);
+			name = WorkSlide;
+			sourceTree = "<group>";
+		};
+		05827D7918F825950023FB8D /* LogoPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				05827D7618F825920023FB8D /* SJSLogoPageControl.h */,
+				05827D7718F825920023FB8D /* SJSLogoPageControl.m */,
+			);
+			name = LogoPageControl;
+			sourceTree = "<group>";
+		};
+		05827D7A18F837900023FB8D /* Showcase */ = {
+			isa = PBXGroup;
+			children = (
+				05827D7E18F837D60023FB8D /* SJSShowcaseViewController.h */,
+				05827D7F18F837D60023FB8D /* SJSShowcaseViewController.m */,
+				05827D8118F83BC80023FB8D /* SJSExperienceViewController.h */,
+				05827D8218F83BC80023FB8D /* SJSExperienceViewController.m */,
+				058E5B1F18FA856300960EEE /* SJSProjectsViewController.h */,
+				058E5B2018FA856300960EEE /* SJSProjectsViewController.m */,
+				0531822718F597D700F65C80 /* SJSAppsViewController.h */,
+				0531822818F597D700F65C80 /* SJSAppsViewController.m */,
+			);
+			name = Showcase;
+			sourceTree = "<group>";
+		};
+		059BAB8318F5343100444A0D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				059BAB8418F5345400444A0D /* SJSAvatarImageView.h */,
+				059BAB8518F5345400444A0D /* SJSAvatarImageView.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		059BAB8718F5360B00444A0D /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				059BAB8818F5361900444A0D /* SJSTextView.h */,
+				059BAB8918F5361900444A0D /* SJSTextView.m */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
+		059E2BED18F05B9C00E01788 /* PresentationSlide */ = {
+			isa = PBXGroup;
+			children = (
+				059E2BEE18F05BAB00E01788 /* SJSPresentationSlide.h */,
+				059E2BEF18F05BAB00E01788 /* SJSPresentationSlide.m */,
+			);
+			name = PresentationSlide;
+			sourceTree = "<group>";
+		};
+		05D4DD3518F92C16001CB8F2 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				05D52D5618F4321A004FEF32 /* SJSAboutViewController.h */,
+				05D52D5718F4321A004FEF32 /* SJSAboutViewController.m */,
+				05D4DD3218F92C07001CB8F2 /* SJSSocialViewController.h */,
+				05D4DD3318F92C07001CB8F2 /* SJSSocialViewController.m */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		05D4DD3618F92C28001CB8F2 /* Dribbble */ = {
+			isa = PBXGroup;
+			children = (
+				0573C3EF18F2E620006067EB /* SJSDribbbleViewController.h */,
+				0573C3F018F2E620006067EB /* SJSDribbbleViewController.m */,
+			);
+			name = Dribbble;
+			sourceTree = "<group>";
+		};
+		05D52D5A18F43FFF004FEF32 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				05D52D5B18F4400F004FEF32 /* SJSMenuTableView.h */,
+				05D52D5C18F4400F004FEF32 /* SJSMenuTableView.m */,
+				05D52D5E18F44046004FEF32 /* SJSMenuTableViewCell.h */,
+				05D52D5F18F44046004FEF32 /* SJSMenuTableViewCell.m */,
+			);
+			name = TableViews;
+			sourceTree = "<group>";
+		};
+		05D52D6A18F447EB004FEF32 /* AsynchronousImage */ = {
+			isa = PBXGroup;
+			children = (
+				05D52D6B18F447FA004FEF32 /* SJSAsynchronousImage.h */,
+				05D52D6C18F447FA004FEF32 /* SJSAsynchronousImage.m */,
+			);
+			name = AsynchronousImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		051DCC2D18F0463F00105A27 /* Sjors Snoeren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 051DCC5A18F0463F00105A27 /* Build configuration list for PBXNativeTarget "Sjors Snoeren" */;
+			buildPhases = (
+				051DCC2A18F0463F00105A27 /* Sources */,
+				051DCC2B18F0463F00105A27 /* Frameworks */,
+				051DCC2C18F0463F00105A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sjors Snoeren";
+			productName = "Sjors Snoeren";
+			productReference = 051DCC2E18F0463F00105A27 /* Sjors Snoeren.app */;
+			productType = "com.apple.product-type.application";
+		};
+		051DCC4818F0463F00105A27 /* Sjors SnoerenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 051DCC5D18F0463F00105A27 /* Build configuration list for PBXNativeTarget "Sjors SnoerenTests" */;
+			buildPhases = (
+				051DCC4518F0463F00105A27 /* Sources */,
+				051DCC4618F0463F00105A27 /* Frameworks */,
+				051DCC4718F0463F00105A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				051DCC4F18F0463F00105A27 /* PBXTargetDependency */,
+			);
+			name = "Sjors SnoerenTests";
+			productName = "Sjors SnoerenTests";
+			productReference = 051DCC4918F0463F00105A27 /* Sjors SnoerenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		051DCC2618F0463F00105A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SJS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sjors Snoeren";
+				TargetAttributes = {
+					051DCC4818F0463F00105A27 = {
+						TestTargetID = 051DCC2D18F0463F00105A27;
+					};
+				};
+			};
+			buildConfigurationList = 051DCC2918F0463F00105A27 /* Build configuration list for PBXProject "Sjors Snoeren" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 051DCC2518F0463F00105A27;
+			productRefGroup = 051DCC2F18F0463F00105A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				051DCC2D18F0463F00105A27 /* Sjors Snoeren */,
+				051DCC4818F0463F00105A27 /* Sjors SnoerenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		051DCC2C18F0463F00105A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051DCC3C18F0463F00105A27 /* InfoPlist.strings in Resources */,
+				051DCC4418F0463F00105A27 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051DCC4718F0463F00105A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051DCC5518F0463F00105A27 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		051DCC2A18F0463F00105A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059BAB8A18F5361900444A0D /* SJSTextView.m in Sources */,
+				05D52D5818F4321A004FEF32 /* SJSAboutViewController.m in Sources */,
+				05D4DD3418F92C07001CB8F2 /* SJSSocialViewController.m in Sources */,
+				05827D8018F837D60023FB8D /* SJSShowcaseViewController.m in Sources */,
+				0531822618F5955300F65C80 /* UIImage+ImageEffects.m in Sources */,
+				051DCC3E18F0463F00105A27 /* main.m in Sources */,
+				059E2BF018F05BAB00E01788 /* SJSPresentationSlide.m in Sources */,
+				05D52D6918F4443E004FEF32 /* SJSDetailViewController.m in Sources */,
+				052370CD18F1BAF900DF999D /* SJSDribbbleModel.m in Sources */,
+				05D52D5D18F4400F004FEF32 /* SJSMenuTableView.m in Sources */,
+				058E5B2118FA856300960EEE /* SJSProjectsViewController.m in Sources */,
+				0573C3FA18F2FC00006067EB /* SJSMenuViewController.m in Sources */,
+				052370AB18F1678A00DF999D /* SJSReadMoreBtn.m in Sources */,
+				05827D8318F83BC80023FB8D /* SJSExperienceViewController.m in Sources */,
+				051DCC6718F04E6F00105A27 /* SJSPresentationViewController.m in Sources */,
+				0573C3E118F29A53006067EB /* SJSViewController.m in Sources */,
+				0573C3EA18F2DEEA006067EB /* SJSWorkCollectionViewCell.m in Sources */,
+				05D52D6D18F447FA004FEF32 /* SJSAsynchronousImage.m in Sources */,
+				0573C3F118F2E620006067EB /* SJSDribbbleViewController.m in Sources */,
+				051DCC4218F0463F00105A27 /* SJSAppDelegate.m in Sources */,
+				0531822918F597D700F65C80 /* SJSAppsViewController.m in Sources */,
+				05827D7818F825920023FB8D /* SJSLogoPageControl.m in Sources */,
+				057EE45618F6EA8D00852980 /* SJSWorkSlide.m in Sources */,
+				059BAB8618F5345400444A0D /* SJSAvatarImageView.m in Sources */,
+				0573C3F518F2F816006067EB /* SJSSidebarViewController.m in Sources */,
+				0573C3D918F295B7006067EB /* SJSVCAnimator.m in Sources */,
+				05D52D6018F44046004FEF32 /* SJSMenuTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051DCC4518F0463F00105A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051DCC5718F0463F00105A27 /* Sjors_SnoerenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		051DCC4F18F0463F00105A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 051DCC2D18F0463F00105A27 /* Sjors Snoeren */;
+			targetProxy = 051DCC4E18F0463F00105A27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		051DCC3A18F0463F00105A27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				051DCC3B18F0463F00105A27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		051DCC5318F0463F00105A27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				051DCC5418F0463F00105A27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		051DCC5818F0463F00105A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		051DCC5918F0463F00105A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		051DCC5B18F0463F00105A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sjors Snoeren/Sjors Snoeren-Prefix.pch";
+				INFOPLIST_FILE = "Sjors Snoeren/Sjors Snoeren-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		051DCC5C18F0463F00105A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sjors Snoeren/Sjors Snoeren-Prefix.pch";
+				INFOPLIST_FILE = "Sjors Snoeren/Sjors Snoeren-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		051DCC5E18F0463F00105A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sjors Snoeren.app/Sjors Snoeren";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sjors Snoeren/Sjors Snoeren-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sjors SnoerenTests/Sjors SnoerenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		051DCC5F18F0463F00105A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sjors Snoeren.app/Sjors Snoeren";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sjors Snoeren/Sjors Snoeren-Prefix.pch";
+				INFOPLIST_FILE = "Sjors SnoerenTests/Sjors SnoerenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		051DCC2918F0463F00105A27 /* Build configuration list for PBXProject "Sjors Snoeren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051DCC5818F0463F00105A27 /* Debug */,
+				051DCC5918F0463F00105A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		051DCC5A18F0463F00105A27 /* Build configuration list for PBXNativeTarget "Sjors Snoeren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051DCC5B18F0463F00105A27 /* Debug */,
+				051DCC5C18F0463F00105A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		051DCC5D18F0463F00105A27 /* Build configuration list for PBXNativeTarget "Sjors SnoerenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				051DCC5E18F0463F00105A27 /* Debug */,
+				051DCC5F18F0463F00105A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 051DCC2618F0463F00105A27 /* Project object */;
+}
